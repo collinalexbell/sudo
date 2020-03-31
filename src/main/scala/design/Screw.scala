@@ -8,8 +8,8 @@ import net.joewing.scalacad.io
 import net.joewing.scalacad.io.AwtRenderer
 
 object Screw {
-  val obj = Threads(4, 10, 4, 0.75, .075)
+  val threads = Threads(4, 30, 12, 0.75, .075)
   def main(args: Array[String]) = {
-    AwtRenderer.show(obj)
+    AwtRenderer.show(threads)
   }
 }
