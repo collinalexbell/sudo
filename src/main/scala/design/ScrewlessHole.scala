@@ -8,7 +8,7 @@ import net.joewing.scalacad.io
 import net.joewing.scalacad.io.AwtRenderer
 
 object ScrewlessHole {
-  val hole = Cylinder(15, 4.2, 4.2, 30).centered
+  val hole = Cylinder(15, 4.35, 4.35, 30).centered
   val box = Cube(12, 12, 12).centered
   def drill(obj: Primitive[ThreeDimensional]) =
     obj - hole
