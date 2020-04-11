@@ -7,7 +7,7 @@ module clip() {
 
   module corner(xyz) { 
     lip = 1.3;
-    height = 6;
+    height = 8;
     x1 = xyz[0];
     y1 = 1;
 
