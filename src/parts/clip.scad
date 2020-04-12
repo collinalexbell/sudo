@@ -1,9 +1,11 @@
 
+function nutY() = 12;
+function nutX() = 15;
+
 module clip() {
-  nutX = 15;
-  nutY = 12;
+  nutX = nutX();
   nutZ = 12;
-  cube([nutX, nutY, nutZ]);
+  cube([nutX, nutY(), nutZ]);
 
   module corner(xyz) { 
     lip = 1.3;
@@ -35,7 +37,7 @@ module clip() {
   }
 
   ySup = 80;
-  translate([0, -ySup/2 + nutY/2, nutZ]){
+  translate([0, -ySup/2 + nutY()/2, nutZ]){
     cubeWithCorner([15, ySup, 2]);
   }
 }
